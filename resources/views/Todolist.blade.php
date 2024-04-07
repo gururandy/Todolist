@@ -23,10 +23,10 @@
                                 <tbody>
                                     <tr>
                                         <td style='width: 5%;'>
-                                            <input class='form-check-input' type='checkbox' value='{{ $TodoList->id }}' name='Completecheck[]' onclick="checkboxSelected()">
+                                            <input class='form-check-input' style="cursor: pointer;"  type='checkbox' value='{{ $TodoList->id }}' name='Completecheck[]' onclick="checkboxSelected()">
                                         </td>
-                                        <td style='width: 70%;text-align: left;font-size: 16px;' onclick="showFullDetails({{ $TodoList->id }})">
-                                        {{ $TodoList->title }} - status ({{$TodoList->completed_status}})
+                                        <td style='width: 70%;text-align: left;font-size: 16px;' style="cursor: pointer;" onclick="showFullDetails({{ $TodoList->id }})">
+                                        Title ({{ $TodoList->title }})
                                         </td>
                                         <td style='width: 5%;'>
                                             <i class='fa-solid fa-trash' style="cursor: pointer;" onclick='DeleteTodoListfun({{ $TodoList->id }})'></i>
