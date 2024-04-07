@@ -17,6 +17,14 @@ use App\Http\Controllers\TodolistController;
 //     return view('welcome');
 // });
 
-
+// Todo List Route
 Route::get('/', [TodolistController::class,'index']);
+Route::post('InsertTodolistDetails', [TodolistController::class,'Create']);
+Route::post('EditTodolistDetails', [TodolistController::class,'Show']);
+Route::post('UpdateTodolist', [TodolistController::class,'Update']);
+Route::post('DeleteTodolist', [TodolistController::class,'Delete']);
+Route::post('updatestatus', [TodolistController::class,'Updatestatus']);
+Route::post('Showsingletodolist', [TodolistController::class,'showsingle']);
+
+
 
